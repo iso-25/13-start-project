@@ -1,0 +1,29 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+.menu {
+	display: none;
+}
+@media screen and (max-width: 992px) {
+	.ul {
+		position: fixed;
+		width: 300px;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		background: orange;
+		top: 0;
+		left: 0;
+		transition: 0.2s all ease-in-out;
+		transform: translateX(-120%);
+	}
+	.ul_active {
+		transform: translateX(0);
+	}
+	.menu {
+		display: inline-block;
+	}
+}
